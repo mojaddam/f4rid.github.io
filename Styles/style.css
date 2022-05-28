@@ -44,21 +44,38 @@ div{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 7px;
 }
 div h1{
   color: whitesmoke;
-  font-size: 50pt;
+  font-size: 26pt;
   text-align: center;
-  word-spacing: -25px;
-  letter-spacing: -3px;
+  word-spacing: -20px;
 }
 div h1 span{
-  font-size: 45pt;
+  font-size: 22pt;
 }
 div p{
   color: whitesmoke;
   text-align: center;
-  width: 50%;
-  /* margin: 0 auto; */
+  margin-top: 15px;
   word-spacing: -5px;
+}
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  div h1{
+    font-size: 50pt;
+    letter-spacing: -3px;
+  }
+  div h1 span{
+    font-size: 45pt;
+  }
+  div p{
+    width: 50%;
+  }
 }
