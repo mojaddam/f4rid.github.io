@@ -38,7 +38,10 @@ body{
 		background-position: 0% 50%;
 	}
 }
-div{
+a{
+  color: whitesmoke;
+}
+.container{
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -46,21 +49,31 @@ div{
   align-items: center;
   padding: 7px;
 }
-div h1{
+.container h1{
   color: whitesmoke;
   font-size: 26pt;
   text-align: center;
   word-spacing: -20px;
 }
-div h1 span{
+.container h1 span{
   font-size: 22pt;
 }
-div p{
+.container p{
   color: whitesmoke;
   text-align: center;
   margin-top: 15px;
   word-spacing: -5px;
 }
+.social{
+  flex-direction: row;
+  display: flex;
+}
+.icon_url{
+  width: 20px;
+  margin: 10px;
+  fill: rgb(245,245,245);
+}
+
 @media only screen and (min-width: 600px) {
   /* For tablets: */
 
@@ -68,14 +81,23 @@ div p{
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
-  div h1{
+  .container h1{
     font-size: 50pt;
     letter-spacing: -3px;
   }
-  div h1 span{
+  .container h1 span{
     font-size: 45pt;
   }
-  div p{
+  .container p{
     width: 50%;
+  }
+  .icon_url{
+    width: 20px;
+    margin: 10px;
+    fill: rgba(245,245,245,0.8);
+    transition: 0.3s;
+  }
+  .icon_url:hover{
+    fill: rgb(245,245,245);
   }
 }
