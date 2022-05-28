@@ -1,0 +1,64 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  position: relative;
+  height: 100%;
+}
+body{
+  background: #FEAC5E;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,-45deg, rgb(254, 172, 94), rgb(199, 121, 208), rgb(75, 192, 200));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,  rgb(254, 172, 94), rgb(199, 121, 208), rgb(75, 192, 200)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 200% 200%;
+	animation: gradient 15s ease infinite;
+	/* height: 100vh; */
+  font-family: 'MODERNSPACE', sans-serif;  
+  border: 1px solid whitesmoke;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+div{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div h1{
+  color: whitesmoke;
+  font-size: 50pt;
+  text-align: center;
+  word-spacing: -25px;
+  letter-spacing: -3px;
+}
+div h1 span{
+  font-size: 45pt;
+}
+div p{
+  color: whitesmoke;
+  text-align: center;
+  width: 50%;
+  /* margin: 0 auto; */
+  word-spacing: -5px;
+}
